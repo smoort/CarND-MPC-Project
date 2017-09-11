@@ -119,6 +119,8 @@ int main() {
           //double epsi = psi - atan(coeffs[1] + 2 * px * coeffs[2] + 3 * coeffs[3] * pow(px, 2));
           double epsi = -atan(coeffs[1]);
 
+          cout << "Error = " << cte << " " << epsi << endl;
+
           double steer_value = j[1]["steering_angle"];
           double throttle_value = j[1]["throttle"];
 
