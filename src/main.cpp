@@ -104,7 +104,7 @@ int main() {
             double shift_y = ptsy[i] - py;
 
             ptsx[i] = (shift_x * cos(0-psi) - shift_y * sin(0-psi));
-            ptsy[i] = (shift_x * sin(0-psi) - shift_y * cos(0-psi));
+            ptsy[i] = (shift_x * sin(0-psi) + shift_y * cos(0-psi));
           }
 
           double* ptrx = &ptsx[0];
